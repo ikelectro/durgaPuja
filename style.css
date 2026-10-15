@@ -3,6 +3,36 @@ body{
   font-family: "Anek Bangla", sans-serif;
 }
 
+header{
+  color: white;
+}
+
+scroll-container {
+  width: 100%;             /* Adjust the width of the display area */
+  overflow: hidden;        /* Hides the text when it leaves the box */
+  padding: 2px 0;
+}
+
+.scroll-text {
+  white-space: nowrap;     /* Prevents the text from wrapping to a new line */
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+  
+  /* Apply the animation: named "scroll", lasts 10 seconds, continuous loop */
+  animation: scroll-effect 30s linear infinite; 
+}
+
+/* Define the scrolling movement */
+@keyframes scroll-effect {
+  0% {
+    transform: translateX(100%);  /* Start completely off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End completely off-screen to the left */
+  }
+}
+
 .image-one, .image-two, .image-three{
   display: flex;
   flex-direction: column;
@@ -81,12 +111,9 @@ margin-top: -5%;
 .animi{
   color: whitesmoke;
   font-weight: bold;
-  
 }
 .animi-bg{
- 
-background-color: rgb(238, 108, 108);
-
+ background-color: rgb(238, 108, 108);
 }
 
 
@@ -115,7 +142,36 @@ background-color: rgb(238, 108, 108);
 .tithi-heading{
   font-size: 1rem;
 }
-a{
-  color: black;
+  a{
+    color: black;
+  }
+
+.scroll-container {
+  width: 100%;             /* Adjust the width of the display area */
+  overflow: hidden;        /* Hides the text when it leaves the box */
+  padding: 2px 0;
 }
+
+.scroll-text {
+  white-space: nowrap;     /* Prevents the text from wrapping to a new line */
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 10px;
+  
+  /* Apply the animation: named "scroll", lasts 10 seconds, continuous loop */
+  animation: scroll-effect 15s linear infinite; 
+}
+
+/* Define the scrolling movement */
+@keyframes scroll-effect {
+  0% {
+    transform: translateX(100%);  /* Start completely off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End completely off-screen to the left */
+  }
+}
+
+
+
 }
