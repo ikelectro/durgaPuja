@@ -2,7 +2,7 @@
 
   function handleClickEvent(){
     $(document).off("click");     // Remove the click event listener to prevent multiple triggers
-    var audioGrettings = new Audio ("assets/mahalaya.mp3");
+    var audioGrettings = new Audio ("https://durga-puja-2026-sigma.vercel.app/assets/mahalaya.mp3");
     audioGrettings.play();
     $(".greetings").addClass("animi");
     $("body").addClass("animi-bg");
